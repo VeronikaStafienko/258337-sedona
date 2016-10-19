@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Veronika Stafienko](https://up.htmlacademy.ru/htmlcss/15/user/258337).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Духницький](https://htmlacademy.ru/profile/id59884).
 
 ---
 
