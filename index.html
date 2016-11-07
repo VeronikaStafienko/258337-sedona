@@ -6,6 +6,7 @@
   <title>Седона</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/symbols-sedona.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
@@ -45,13 +46,14 @@
         </div>
       </div>
       <div class="features">
-        <h1 class="features">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h1 class="features">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p class="features">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <div class="features-item clearfix">
           <div class="item-left item-description">
             <div class="description-container">
-              <div class="features-title">Настоящий городок</div>
-              <span class="features-description">№1</span>
+              <div class="features-title">Настоящий
+                <br> городок</div>
+              <span class="features-description">&mdash; №1 &mdash;</span>
               <p class="features-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
             </div>
           </div>
@@ -66,9 +68,8 @@
               <img src="img/index/home.png" width="75" height="72" alt="motel">
             </div>
             <div class="add-description">
-              <h2>Жилье</h2>
-              <p>Рекомендуем пожить в настоящем
-                <br> мотеле, все как в кино!</p>
+              <h2 class="add-descript">Жилье</h2>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
           </div>
           <div class="features-add">
@@ -76,9 +77,8 @@
               <img src="img/index/eat.png" width="74" height="70" alt="burger">
             </div>
             <div class="add-description">
-              <h2>Еда</h2>
-              <p>Всегда заказывайте фирменный бургер,
-                <br> вы не разочаруетесь!</p>
+              <h2 class="add-descript">Еда</h2>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </div>
           </div>
           <div class="features-add">
@@ -86,9 +86,8 @@
               <img src="img/index/souvenir.png" alt="souvenir">
             </div>
             <div class="add-description">
-              <h2>Сувениры</h2>
-              <p>Не только китайского, но и местного
-                <br> производства!</p>
+              <h2 class="add-descript">Сувениры</h2>
+              <p>Не только китайского, но и местного производства!</p>
             </div>
           </div>
         </div>
@@ -98,46 +97,52 @@
           </div>
           <div class="item-right item-description">
             <div class="description-container">
-              <div class="features-title">Там есть мост дьявола</div>
-              <span class="features-description">№2</span>
+              <div class="features-title">Там есть
+                <br> мост дьявола</div>
+              <span class="features-description">&mdash; №2 &mdash;</span>
               <p class="features-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </div>
         </div>
         <div class="features-item-last clearfix">
           <div class="features-add">
-            <h2>Небольшая площадь</h2>
-            <span>№3</span>
+            <h2>Небольшая<br> площадь</h2>
+            <span>&mdash; №3 &mdash;</span>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
           <div class="features-add">
-            <h2>Красивая дорога</h2>
-            <span>№4</span>
+            <h2>Красивая<br> дорога</h2>
+            <span>&mdash; №4 &mdash;</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="features-add">
-            <h2>Мало туристов</h2>
-            <p>№5</p>
+            <h2>Мало<br> туристов</h2>
+            <span>&mdash; №5 &mdash;</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </div>
-        <div class="search">
-          <div class="search-title">
-            <h3>Заинтересовались?</h3>
-            <p>Укажите предполагаемые даты поездки
-              <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          </div>
-          <div class="search-block">
-            <form class="search" action="#" method="get">
-              <div class="search-header">
-                <button type="submit">Поиск гостиницы в Седоне</button>
-              </div>
-              <div class="search-main">
-                <div class="search-form">
+      </div>
+
+      <div class="search">
+
+        <div class="search-title">
+          <h3>Заинтересовались?</h3>
+          <p>Укажите предполагаемые даты поездки
+            <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
+        <div class="search-block">
+          <form class="search-block" action="#" method="get">
+            <div class="search-header">
+              <button type="submit">Поиск гостиницы в Седоне</button>
+            </div>
+
+            <div class="search-main clearfix">
+              <div class="search-conteiner">
+                <div class="search-form icon-calendar">
                   <label for="date-in">Дата заезда:</label>
                   <input class="date" type="text" name="date" id="date-in" value="24 апреля 2016">
                 </div>
-                <div class="search-form">
+                <div class="search-form  icon-calendar">
                   <label for="date-out">Дата выезда:</label>
                   <input class="date" type="text" name="date" id="date-out" value="4 июля 2016">
                 </div>
@@ -151,20 +156,22 @@
                 </div>
                 <button class="search-btn" type="submit">Найти</button>
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
+
+
     </main>
     <footer class="main-footer">
       <div class="footer-container clearfix">
         <div class="footer-hashtag">
           <h1>#VISITSEDONA</h1>
         </div>
-        <div class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-youtube" href="#">YouTube</a>
+        <div class="footer-social clearfix">
+          <a class="social-btn icon-twitter" href="#"></a>
+          <a class="social-btn icon-facebook" href="#"></a>
+          <a class="social-btn icon-youtube" href="#"></a>
         </div>
         <div class="footer-copyright">
           <span>Website by</span>
