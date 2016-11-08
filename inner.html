@@ -80,22 +80,27 @@
                 <label for="checkbox-6">Апартаменты</label>
                 <input id="checkbox-6" type="checkbox" checked>
               </li>
-
+            </ul>
 
           </div>
-          <div class="search-options-item">
+          <div class="filter-range">
             <span class="options-name">Стоимость в сутки (р):</span>
-            <div class="<price-range">
-              <label for="pricerange-from">от</label>
-              <input type="text" id="pricerange-from" name="pricerange-from" value="0">
-              <label for="pricerange-to">до</label>
-              <input type="text" id="pricerange-to" name="pricerange-to" value="3000">
+            <div class="price-controls">
+              <label class="min-price">от
+                <input type="text" name="min-price" value="0">
+              </label>
+              <label class="max-price">до
+                <input type="text" name="max-price" value="3000">
+              </label>
             </div>
-            <div class="range">
-              <div class="bar"></div>
-              <div class="bar"></div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
             </div>
-            <button class="btn" type="submit">Показать</button>
+            <button class="btn-transparent" type="submit">Показать</button>
           </div>
         </form>
       </div>
@@ -104,11 +109,14 @@
           <b class="results-name">Найдено: 3</b>
           <div class="results-sort">
             <span>Сортировка:</span>
-            <a href="#">по цене</a>
-            <a href="#">по типу</a>
-            <a href="#">по рейтингу</a>
+            <a class="sort active" href="#">по цене</a>
+            <a class="sort" href="#">по типу</a>
+            <a class="sort" href="#">по рейтингу</a>
           </div>
-          <div class="sorter">**</div>
+          <div class="sorter clearfix">
+            <a class="icon-down-dir active"></a>
+            <a class="icon-up-dir"></a>
+          </div>
         </div>
 
 
@@ -120,20 +128,24 @@
             <span class="results-item-name">Amara Resort & Spa</span>
             <table>
               <tr>
-                <td class="cell">Гостиница</td>
-                <td class="cell">От 3500 Р.</td>
+                <td class="cell-1">Гостиница</td>
+                <td class="cell-2">От 3500 Р.</td>
               </tr>
               <tr>
-                <td class="cell-1"><a href="#">Подробнее</a></td>
-                <td class="cell-2"><a href="#">Забронировать</a></td>
+                <td class="cell-3"><a href="#">Подробнее</a></td>
+                <td class="cell-4"><a href="#">Забронировать</a></td>
               </tr>
             </table>
           </div>
-          <div class="results-item-right">
-            <div class="stars">
+          <div class="results-item-right clearfix">
+            <div class="item-right-stars clearfix">
+              <div class="stars icon-star"></div>
+              <div class="stars icon-star"></div>
+              <div class="stars icon-star"></div>
+              <div class="stars icon-star"></div>
             </div>
             <div class="rating">
-              <p>Рейтинг: 8,5</p>
+              <span>Рейтинг: 8,5</span>
             </div>
           </div>
 
@@ -146,21 +158,24 @@
             <span class="results-item-name">Desert Quail Inn</span>
             <table>
               <tr>
-                <td class="cell">Мотель</td>
-                <td class="cell">От 2000 Р.</td>
+                <td class="cell-1">Мотель</td>
+                <td class="cell-2">От 2000 Р.</td>
               </tr>
               <tr>
-                <td class="cell-1"><a href="#">Подробнее</a></td>
-                <td class="cell-2"><a href="#">Забронировать</a></td>
+                <td class="cell-3"><a href="#">Подробнее</a></td>
+                <td class="cell-4"><a href="#">Забронировать</a></td>
               </tr>
             </table>
           </div>
-          <div class="results-item-right">
-            <div class="stars">
+          <div class="results-item-right clearfix">
+            <div class="item-right-stars clearfix">
+              <div class="stars icon-star"></div>
+              <div class="stars icon-star"></div>
             </div>
             <div class="rating">
-              <p>Рейтинг: 8,9</p>
+              <span>Рейтинг: 8,9</span>
             </div>
+
           </div>
         </div>
         <div class="results-item clearfix">
@@ -171,20 +186,23 @@
             <span class="results-item-name">Villas at Poco Diablo</span>
             <table>
               <tr>
-                <td class="cell">Апартаменты</td>
-                <td class="cell">От 4000 Р.</td>
+                <td class="cell-1">Апартаменты</td>
+                <td class="cell-2">От 4000 Р.</td>
               </tr>
               <tr>
-                <td class="cell-1"><a href="#">Подробнее</a></td>
-                <td class="cell-2"><a href="#">Забронировать</a></td>
+                <td class="cell-3"><a href="#">Подробнее</a></td>
+                <td class="cell-4"><a href="#">Забронировать</a></td>
               </tr>
             </table>
           </div>
-          <div class="results-item-right">
-            <div class="stars">
+          <div class="results-item-right clearfix">
+            <div class="item-right-stars clearfix">
+              <div class="stars icon-star"></div>
+              <div class="stars icon-star"></div>
+              <div class="stars icon-star"> </div>
             </div>
             <div class="rating">
-              <p>Рейтинг: 9,2</p>
+              <span>Рейтинг: 9,2</span>
             </div>
           </div>
         </div>
