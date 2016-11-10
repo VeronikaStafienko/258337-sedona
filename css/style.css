@@ -68,14 +68,6 @@
     content: "\2605";
   }
   
-  .icon-check-off::before {
-    content: "\2610";
-  }
-  
-  .icon-check-on::before {
-    content: "\2611";
-  }
-  
   .icon-calendar::before {
     content: "\e800";
   }
@@ -120,15 +112,23 @@
   
   .main-navigation li.right {
     float: right;
+    margin-left: 30px;
   }
   
   .main-navigation li.left {
     float: left;
+    margin-right: 30px;
+  }
+  
+  .main-navigation li {
+    display: block;
+    padding: 15px 0;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
   }
   
   .main-navigation a {
-    display: block;
-    padding: 15px 0;
     font-weight: bold;
     color: #000000;
     text-decoration: none;
@@ -359,15 +359,6 @@
     margin-bottom: 47px;
   }
   
-  .search-conteiner {
-    width: 462px;
-    height: 284px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #ffffff;
-    padding: 55px 54px;
-  }
-  
   .search-header button {
     width: 568px;
     height: 86px;
@@ -382,32 +373,80 @@
     border: 0;
   }
   
+  .search-conteiner {
+    width: 462px;
+    height: 284px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ffffff;
+    padding: 55px 53px;
+    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  }
+  
   .search-form input {
     margin-bottom: 29px;
-    width: 332px;
-    border: 0;
+    width: 331px;
+    border: 1px solid #ffffff;
     background-color: #f2f2f2;
-    padding-left: 14px;
+    padding: 0;
+    padding-left: 15px;
+  }
+  
+  .search-form input:hover {
+    background-color: #ebebeb;
+  }
+  
+  .search-form input:active {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+  }
+  
+  .date {
+    width: 345px;
+    height: 37px;
+    margin-left: 21px;
+  }
+  
+  input[id*="date-out"] {
+    margin-left: 16px;
   }
   
   .search-form {
     position: relative;
   }
   
-  .icon-calendar::before {
+  a.icon-calendar::before {
     position: absolute;
     font-size: 1.5em;
-    opacity: 0.2;
     right: 9px;
     top: 8px;
+    color: #c2c2c2;
+  }
+  
+  a.icon-calendar:hover::before {
+    color: #000000;
+  }
+  
+  a.icon-calendar:active::before {
+    color: #81b3d2;
   }
   
   .half-width input {
-    width: 115px;
+    width: 114px;
     margin-bottom: 52px;
-    border: 0;
+    border: 1px solid #ffffff;
     background-color: #f2f2f2;
     text-align: center;
+    padding: 0;
+  }
+  
+  .half-width input:hover {
+    background-color: #ebebeb;
+  }
+  
+  .half-width input:active {
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
   }
   
   .left {
@@ -422,17 +461,11 @@
   .number {
     width: 115px;
     height: 37px;
-    margin-left: 30px;
+    margin-left: 24px;
   }
   
   .left input {
     margin-left: 40px;
-  }
-  
-  .date {
-    width: 345px;
-    height: 37px;
-    margin-left: 20px;
   }
   
   .search-btn {
@@ -451,6 +484,15 @@
     text-transform: uppercase;
   }
   
+  button.search-btn:hover {
+    background-color: #669ec0;
+  }
+  
+  button.search-btn:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+  }
+  
   .search-form,
   .half-width,
   .date,
@@ -461,6 +503,7 @@
     line-height: 26px;
     color: #000000;
     font-weight: bold;
+    text-align: left;
   }
   
   .main-footer {
@@ -495,6 +538,20 @@
     vertical-align: middle;
   }
   
+  a.social-btn:hover {
+    background-color: #669ec0;
+  }
+  
+  a.social-btn:active {
+    background-color: #5496bd;
+  }
+  
+  a.icon-facebook:active::before,
+  a.icon-twitter:active::before,
+  a.icon-youtube:active::before {
+    color: #88b6d1;
+  }
+  
   a.icon-facebook::before,
   a.icon-twitter::before,
   a.icon-youtube::before {
@@ -516,8 +573,21 @@
     padding-bottom: 5px;
   }
   
-  .footer-copyright img {
+  .footer-copyright a {
+    display: inline-block;
     vertical-align: middle;
+    width: 113px;
+    height: 39px;
+    background: url("../img/index/html1.png") no-repeat;
+    background-position: top;
+  }
+  
+  .footer-copyright a:hover {
+    background-position: center;
+  }
+  
+  .footer-copyright a:active {
+    background-position: bottom;
   }
   /*inner*/
   
@@ -573,10 +643,20 @@
     margin-left: 0;
     margin-right: 15px;
     vertical-align: middle;
+    text-align: left;
+  }
+  
+  input[id*="checkbox-"] + label.icon-check:hover::before {
+    color: #ffffff;
   }
   
   input:checked + label.icon-check::before {
     content: "\2611";
+    color: #ffffff;
+  }
+  
+  input + label.icon-check,
+  input + label.icon-check::before {
     color: #ffffff;
   }
   
@@ -779,6 +859,7 @@
   a.icon-up-dir {
     float: right;
     width: 22px;
+    text-decoration: none;
   }
   
   a.icon-down-dir::before,
