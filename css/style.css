@@ -328,7 +328,6 @@ h2.add-descript {
 }
 
 .search {
-  position: relative;
   width: 100%;
   height: 710px;
   text-align: center;
@@ -370,9 +369,8 @@ h2.add-descript {
 
 a.header-search {
   display: inline-block;
-  padding: 30px 139px;
+  padding: 30px 138px;
   background-color: #766357;
-  font-family: "PT Sans";
   text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
@@ -433,13 +431,14 @@ a.header-search {
 .date {
   width: 347px;
   height: 35px;
-  margin-left: 19px;
+  margin-left: 18px;
 }
 
 input[name="date-out"] {
   margin-left: 15px;
 }
 
+.search-block,
 .search-form {
   position: relative;
 }
@@ -547,7 +546,7 @@ a.icon-calendar:active::before {
   line-height: 26px;
   color: #ffffff;
   font-weight: bold;
-  font-family: "PT Sans";
+  font-family: inherit;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -564,7 +563,7 @@ button.search-btn:active {
 .search-main,
 .date,
 .number {
-  font-family: "PT Sans";
+  font-family: inherit;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 26px;
@@ -582,12 +581,15 @@ button.search-btn:active {
   width: 400px;
   float: left;
   text-align: center;
-}
-
-.footer-hashtag h1 {
   margin-top: 12px;
   margin-bottom: 12px;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
 }
+
+.footer-hashtag {}
 
 .footer-social {
   width: 400px;
@@ -663,7 +665,7 @@ a.icon-youtube::before {
 .search-options {
   display: block;
   width: 1060px;
-  padding: 29px 70px;
+  padding: 28px 70px;
   background-image: url("../img/inner/filterbackground.jpg");
   background-repeat: no-repeat;
 }
@@ -677,7 +679,7 @@ a.icon-youtube::before {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
-  font-family: "PT Sans";
+  font-family: inherit;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -742,7 +744,6 @@ span.options-name {
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
-  font-family: "PT Sans";
 }
 
 .price-controls {
@@ -881,11 +882,11 @@ span.options-name {
   padding-top: 6px;
 }
 
-.results-sort a,
 a.sort {
   font-size: 12px;
   line-height: 18px;
   color: #000000;
+  opacity: 0.3;
   font-weight: normal;
   text-decoration: none;
   border-bottom: 1px dotted;
@@ -903,14 +904,17 @@ a.sort {
 .results-sort a.active {
   border-bottom: none;
   color: #81b3d2;
+  opacity: 1;
 }
 
 .results-sort a:hover {
   color: #81b3d2;
+  opacity: 1;
 }
 
 .results-sort a:active {
   color: #000000;
+  opacity: 1;
   border-bottom: none;
 }
 
@@ -962,11 +966,11 @@ a.icon-up-dir:active::before {
 
 .results-item-left {
   float: left;
-  margin-left: 27px;
+  margin-left: 30px;
   width: 280px;
 }
 
-span.results-item-name a {
+a.results-item-name {
   font-size: 21px;
   line-height: 18px;
   color: #000000;
@@ -974,11 +978,11 @@ span.results-item-name a {
   text-decoration: none;
 }
 
-.results-item-name a:hover {
+a.results-item-name:hover {
   color: #81b3d2;
 }
 
-.results-item-name a:active {
+a.results-item-name:active {
   color: #000000;
   opacity: 0.3;
 }
