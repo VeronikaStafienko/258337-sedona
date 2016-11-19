@@ -222,8 +222,9 @@ h3 {
 
 .features-item {
   display: block;
+  position: relative;
   width: 100%;
-  height: 256px;
+  min-height: 256px;
   overflow: hidden;
 }
 
@@ -236,19 +237,19 @@ h3 {
 }
 
 .item-picture {
-  position: relative;
   width: 800px;
 }
 
 .item-picture img {
   position: absolute;
-  top: -78px;
+  top: -50%;
+  bottom: -50%;
+  margin: auto;
 }
 
 .item-description {
   background-color: #81b3d2;
   width: 400px;
-  height: 256px;
   text-align: center;
 }
 
@@ -681,8 +682,7 @@ a.icon-youtube::before {
   display: block;
   width: 1060px;
   padding: 28px 70px;
-  background-image: url("../img/inner/filterbackground.jpg");
-  background-repeat: no-repeat;
+  background: #cccccc url("../img/inner/filterbackground.jpg") no-repeat;
 }
 
 .search-options-item {
